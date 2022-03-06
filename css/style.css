@@ -1,0 +1,404 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif; }
+
+header {
+  background-color: #fafafa;
+  box-shadow: 0 2px 30px 0 rgba(12, 53, 115, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1030; }
+
+main {
+  background-image: linear-gradient(to right, #2b5876, #4e4376); }
+
+.hero-flex {
+  display: flex;
+  width: 80%;
+  gap: 1.5rem;
+  padding-block: 2rem;
+  width: 90%;
+  margin-inline: auto; }
+  .hero-flex .heading {
+    padding: 2rem; }
+    .hero-flex .heading div h1 {
+      font-size: 2.2rem;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+      text-align: center;
+      color: #fff;
+      font-weight: 700; }
+    .hero-flex .heading p {
+      font-size: 1.2rem;
+      line-height: 1.7rem;
+      text-align: justify;
+      color: #f7f7f7; }
+  .hero-flex .img-container img {
+    width: 620px; }
+
+@media screen and (max-width: 1200px) {
+  .hero-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .hero-flex .img-container img {
+      width: 100%;
+      height: 90%; } }
+
+.subtitle-flex {
+  display: flex;
+  padding: 2rem;
+  justify-content: center; }
+  .subtitle-flex h2 {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 500; }
+
+@media screen and (max-width: 480px) {
+  .subtitle-flex h2 {
+    text-align: center; } }
+
+.opinion-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-auto-columns: 1fr;
+  grid-template-areas: 'one' 'two' 'three' 'four' 'five' 'six';
+  padding-block: 2rem;
+  width: 80%;
+  margin-inline: auto; }
+  .opinion-grid .opinion {
+    padding: 2rem;
+    border: solid 0.8px #fff;
+    border-radius: 0.5rem;
+    background: #1B333F;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    color: #f7f7f7;
+    margin-bottom: 1.25rem; }
+    .opinion-grid .opinion .flex {
+      display: flex;
+      gap: 1rem;
+      align-items: center; }
+      .opinion-grid .opinion .flex div img {
+        max-width: 100%;
+        display: block;
+        border-radius: 50%; }
+      .opinion-grid .opinion .flex div .graduate-name {
+        font-size: 1.4rem; }
+    .opinion-grid .opinion p {
+      font-size: 1.25rem;
+      line-height: 1.2;
+      text-align: justify; }
+
+.opinion > p:first-of-type {
+  font-size: 1.25rem;
+  line-height: 1.2;
+  text-align: justify; }
+
+.opinion:nth-child(1) {
+  grid-area: one; }
+
+.opinion:nth-child(2) {
+  grid-area: two; }
+
+.opinion:nth-child(3) {
+  grid-area: three; }
+
+.opinion:nth-child(4) {
+  grid-area: four; }
+
+.opinion:nth-child(5) {
+  grid-area: five; }
+
+@media screen and (min-width: 620px) {
+  .opinion-grid {
+    grid-template-areas: 'one one' 'two five' 'three five' 'four four' 'six'; } }
+
+@media screen and (min-width: 864px) {
+  .opinion-grid {
+    grid-template-areas: "one one two" "five five five" "three four four" "six six six"; } }
+
+@media screen and (min-width: 1200px) {
+  .opinion-grid {
+    grid-template-areas: "one one two five" "three four four six"; }
+  .opinion > p:first-of-type {
+    font-size: 1rem; } }
+
+article > *:where(:not(:first-child)) {
+  padding-top: 1em; }
+
+footer {
+  background-color: #fafafa;
+  box-shadow: 0 -5px 5px -5px rgba(51, 51, 51, 0.514); }
+  footer .footer-container {
+    height: auto; }
+    footer .footer-container .foo-heading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: auto; }
+      footer .footer-container .foo-heading h3 {
+        padding: 1rem;
+        font-size: 1rem;
+        color: #1B333F; }
+    footer .footer-container .flex-row {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      list-style: none;
+      padding: .6rem; }
+      footer .footer-container .flex-row #foo {
+        cursor: pointer; }
+        footer .footer-container .flex-row #foo i {
+          margin: 0.3125rem;
+          font-size: 20px;
+          color: #1B333F; }
+        footer .footer-container .flex-row #foo i:hover {
+          color: #58BDC3; }
+
+.us-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-auto-columns: 1fr;
+  grid-template-areas: 'one' 'two' 'three' 'four' 'five' 'six' 'seven';
+  padding-block: 2rem;
+  width: 80%;
+  margin-inline: auto;
+  align-items: center; }
+  .us-grid h1 {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #fff;
+    font-weight: 700; }
+  .us-grid .atributes {
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background-image: linear-gradient(to right, #ECE9E6, #FFF);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    color: #1B333F;
+    margin-bottom: 20px;
+    transition: .9s ease; }
+  .us-grid .atributes p {
+    text-align: justify; }
+  .us-grid .atributes:hover {
+    transform: translate(5px, -10px); }
+
+.us-grid:nth-child(1) {
+  grid-area: one; }
+
+.us-grid:nth-child(2) {
+  grid-area: two; }
+
+.us-grid:nth-child(3) {
+  grid-area: three; }
+
+.us-grid:nth-child(4) {
+  grid-area: four; }
+
+.us-grid:nth-child(5) {
+  grid-area: five; }
+
+.us-grid:nth-child(6) {
+  grid-area: six; }
+
+.us-grid:nth-child(7) {
+  grid-area: seven; }
+
+@media screen and (min-width: 864px) {
+  .us-grid {
+    grid-template-areas: 'one one' 'two three' 'four five' 'six seven'; }
+  h1 {
+    grid-area: one; }
+  .who {
+    grid-area: two; }
+  .who-img {
+    grid-area: three; }
+  .what {
+    grid-area: five; }
+  .what-img {
+    grid-area: four; }
+  .where {
+    grid-area: six; }
+  .where-img {
+    grid-area: seven; } }
+
+@media screen and (min-width: 1200px) {
+  .atributes {
+    width: 80%;
+    height: auto; } }
+
+.team-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-auto-columns: 1fr;
+  grid-template-areas: 'one' 'two';
+  padding-block: 2rem;
+  width: 80%;
+  margin-inline: auto;
+  align-items: center; }
+  .team-grid .heading-team {
+    grid-area: one;
+    width: 80%;
+    justify-self: center;
+    text-align: center; }
+    .team-grid .heading-team h1 {
+      font-size: 2.2rem;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+      text-align: center;
+      color: #fff;
+      font-weight: 700; }
+  .team-grid .cards-team {
+    grid-area: two; }
+    .team-grid .cards-team .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center; }
+      .team-grid .cards-team .row .card-team {
+        background-image: linear-gradient(to right, #ECE9E6, #FFF);
+        transition: .9s ease; }
+      .team-grid .cards-team .row .card-team:hover {
+        transform: translateY(-5px); }
+      .team-grid .cards-team .row .card {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 21rem;
+        align-items: center;
+        margin: 0.625rem 1.25rem;
+        border-radius: 0.625rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+        padding: 0.625rem 1.25rem;
+        color: #1B333F; }
+        .team-grid .cards-team .row .card img {
+          width: 50%;
+          border-radius: 50%; }
+
+.courses-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-auto-columns: 1fr;
+  grid-template-areas: 'one one one' 'two three four' 'five five five' 'six seven eight' 'nine nine nine' 'ten eleven twelve';
+  padding-block: 2rem;
+  width: 80%;
+  margin-inline: auto;
+  align-items: center; }
+  .courses-grid .heading-c {
+    grid-area: one;
+    width: 80%;
+    justify-self: center;
+    text-align: center; }
+    .courses-grid .heading-c h1 {
+      font-size: 2.2rem;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+      text-align: center;
+      color: #fff;
+      font-weight: 700; }
+  .courses-grid .cours {
+    width: 80%;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .courses-grid .cours i {
+      margin-bottom: 2rem;
+      font-size: 3rem;
+      color: #E5E5E7;
+      transition: .9s ease; }
+    .courses-grid .cours i:hover {
+      transform: scale(1.1, 1.1);
+      color: #58BDC3; }
+    .courses-grid .cours p {
+      color: #f7f7f7;
+      font-size: 1.25rem;
+      font-weight: 500; }
+  .courses-grid .level-3 {
+    grid-area: two; }
+  .courses-grid .level-1 {
+    grid-area: three; }
+  .courses-grid .level-2 {
+    grid-area: four; }
+  .courses-grid .times {
+    grid-area: five;
+    width: 80%;
+    justify-self: center;
+    text-align: center; }
+  .courses-grid .morning {
+    grid-area: six; }
+  .courses-grid .afternoon {
+    grid-area: seven; }
+  .courses-grid .night {
+    grid-area: eight; }
+  .courses-grid .modalities {
+    grid-area: nine;
+    width: 80%;
+    justify-self: center;
+    text-align: center; }
+  .courses-grid .face-to-face {
+    grid-area: ten; }
+  .courses-grid .semi {
+    grid-area: eleven; }
+  .courses-grid .online {
+    grid-area: twelve; }
+  .courses-grid .title h2 {
+    color: #f7f7f7; }
+
+@media screen and (max-width: 640px) {
+  .courses-grid {
+    gap: 2rem;
+    width: 90%; }
+    .courses-grid .title h2 {
+      font-size: 1.1rem; }
+    .courses-grid .cours p {
+      font-size: 0.7rem; }
+    .courses-grid .cours i {
+      font-size: 2rem; } }
+
+.contact-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-auto-columns: 1fr;
+  grid-template-areas: 'one' 'two' 'three';
+  padding-block: 2rem;
+  width: 80%;
+  margin-inline: auto;
+  align-items: center; }
+  .contact-grid .heading-con {
+    grid-area: one;
+    justify-self: center;
+    text-align: center; }
+    .contact-grid .heading-con h1 {
+      font-size: 2.2rem;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+      text-align: center;
+      color: #fff;
+      font-weight: 700; }
+  .contact-grid form {
+    grid-area: two;
+    width: 100%; }
+    .contact-grid form label {
+      color: #f7f7f7;
+      font-size: 1.25rem; }
+  .contact-grid .map {
+    grid-area: three;
+    width: 100%; }
+    .contact-grid .map iframe {
+      width: 100%; }
+
+@media screen and (min-width: 640px) {
+  .contact-grid {
+    grid-template-areas: "one one" "two three"; }
+  .heading-con {
+    grid-area: one; }
+  form {
+    grid-area: two; }
+  .map {
+    grid-area: three; } }
